@@ -2,7 +2,7 @@ package models
 
 type Cita struct {
 	Nombre   string `json:"nombre"`
-	Email    string `json:"email"`
+	Servicio string `json:"servicio"`
+	Fecha    string `json:"fecha"`
 	Telefono string `json:"telefono"`
-	Hora     string `json:"hora"`
 }

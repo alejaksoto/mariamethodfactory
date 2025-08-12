@@ -7,17 +7,17 @@ import (
 )
 
 func main() {
-	router.SetupRoutes()
+	r := router.SetupRoutes()
 
-	// Middleware CORS
-	handler := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+	handler := http.HandlerFunc(func(w http.ResponseWriter, req *http.Request) {
 		w.Header().Set("Access-Control-Allow-Origin", "*")
 		w.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")
 		w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
-		if r.Method == "OPTIONS" {
+		if req.Method == http.MethodOptions {
+			w.WriteHeader(http.StatusOK)
 			return
 		}
-		router.SetupRoutes()
+		r.ServeHTTP(w, req)
 	})
 
 	log.Println("Servidor corriendo en http://localhost:8080")

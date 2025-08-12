@@ -16,7 +16,8 @@ var (
 func GetDB() *sql.DB {
 	once.Do(func() {
 		var err error
-		db, err = sql.Open("mysql", "root:12345@tcp(127.0.0.1:3306)/orfi")
+		db, err = sql.Open("mysql", "root:12345@tcp(localhost:3306)/orfi?parseTime=true")
+
 		if err != nil {
 			log.Fatal("Error conectando a la base de datos:", err)
 		}

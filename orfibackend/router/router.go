@@ -5,6 +5,9 @@ import (
 	"notification/handlers"
 )
 
-func SetupRoutes() {
-	http.HandleFunc("/api/citas", handlers.CrearCita)
+func SetupRoutes() http.Handler {
+	mux := http.NewServeMux()
+	mux.HandleFunc("/api/citas", handlers.CrearCita)
+	// registrar más rutas...
+	return mux
 }

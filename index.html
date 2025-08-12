@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Nombre Peluquería & Manicure a Domicilio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="unas.js"></script>
+</head>
+<body>
+    <!-- Menú principal -->
+    <nav>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#reservas">Reservas</a></li>
+            <li><a href="#sobre">Sobre Nosotros</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Página de Inicio -->
+    <header id="home" class="banner">
+        <img src="/img/banner.png" alt="Manicure a domicilio" class="banner-img">
+        <div class="banner-contenido">
+            <h1>¡Luce espectacular sin salir de casa!</h1>
+            <p>Servicios de manicure y peluquería a domicilio, ¡profesionalismo y comodidad en cada visita!</p>
+            <a href="https://wa.me/XXXXXXXXXXX" class="btn-whatsapp" target="_blank">Reserva ahora por WhatsApp</a>
+        </div>
+    </header>
+
+    <!-- Servicios -->
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-grid">
+            <div class="servicio-card">
+                <img src="/img/2.jpg" alt="Manicure">
+                <h3>Manicure Clásico</h3>
+                <p>Limado, cutícula, esmaltado tradicional.</p>
+                <span class="precio">$12.000</span>
+                <a href="https://wa.me/XXXXXXXXXXX?text=Hola,%20quiero%20reservar%20un%20manicure%20a%20domicilio." target="_blank" class="btn-whatsapp">Reservar</a>
+            </div>
+            <div class="servicio-card">
+                <img src="/img/corte.jpg" alt="Corte de cabello">
+                <h3>Corte de Cabello</h3>
+                <p>Corte y peinado personalizado.</p>
+                <span class="precio">$20.000</span>
+                <a href="https://wa.me/XXXXXXXXXXX?text=Hola,%20quiero%20reservar%20un%20corte%20de%20cabello%20a%20domicilio." target="_blank" class="btn-whatsapp">Reservar</a>
+            </div>
+            <div class="servicio-card">
+                <img src="/img/4.jpg" alt="Pintar el pelo">
+                <h3>Pintar el Pelo</h3>
+                <p>Coloración, lavado y secado.</p>
+                <span class="precio">$45.000</span>
+                <a href="https://wa.me/XXXXXXXXXXX?text=Hola,%20quiero%20pintar%20mi%20pelo%20a%20domicilio." target="_blank" class="btn-whatsapp">Reservar</a>
+            </div>
+            <!-- Agrega más tarjetas según lo necesites -->
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria">
+        <h2>Galería / Portafolio</h2>
+        <div class="galeria-grid">
+            <img src="/img/5.png" alt="Antes y después 1">
+            <img src="/img/6.jpg" alt="Antes y después 2">
+            <img src="/img/3.jpg" alt="Diseño de uñas">
+            <!-- Agrega más imágenes -->
+        </div>
+    </section>
+
+    <!-- Reservas -->
+    <section id="reservas">
+    <h2>Reserva Online</h2>
+    <form id="formReserva">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+        
+        <label>Servicio:</label>
+        <select name="servicio">
+            <option>Manicure</option>
+            <option>Corte de Cabello</option>
+            <option>Pintar el Pelo</option>
+        </select>
+        
+        <label>Fecha y Hora:</label>
+        <input type="datetime-local" name="fecha" required>
+        
+        <label>WhatsApp/Celular:</label>
+        <input type="tel" name="telefono" required>
+        
+        <button type="submit">Solicitar Reserva</button>
+    </form>
+    <p>¡O reserva más rápido por 
+       <a href="https://wa.me/XXXXXXXXXXX" class="link-whatsapp" target="_blank">WhatsApp</a>!
+    </p>
+</section>
+
+
+    <!-- Sobre Nosotros -->
+    <section id="sobre">
+        <h2>Sobre Nosotros</h2>
+        <p>Con más de 10 años de experiencia, nuestra misión es brindar servicios de belleza a domicilio con calidad y atención personalizada. Nuestro equipo está certificado y siempre actualizado en las últimas tendencias.</p>
+        <img src="equipo.jpg" alt="Equipo">
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonios-container">
+            <blockquote>“Súper puntuales, el manicure me duró semanas. ¡Recomendadas 100%!” – Marce</blockquote>
+            <blockquote>“Mi pelo nunca ha lucido tan bien. Profesionales y muy amables.” – Camila R.</blockquote>
+            <!-- Añade más testimonios -->
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p><strong>Teléfono/WhatsApp:</strong> <a href="https://wa.me/XXXXXXXXXXX" target="_blank">+56 9 XXXXXXXX</a></p>
+        <p><strong>Email:</strong> email@tudominio.com</p>
+        <p><strong>Horario:</strong> Lunes a Sábado, 9:00 a 20:00</p>
+        <!-- Adaptar según zona -->
+        <p><strong>Ubicación:</strong> Bogota, Colombia. ¡Nos desplazamos a tu hogar!</p>
+        <div class="redes">
+            <a href="https://www.instagram.com/tuusuario" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/tuusuario" target="_blank">Facebook</a>
+            <a href="https://wa.me/XXXXXXXXXXX" target="_blank">WhatsApp</a>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,170 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0; padding: 0;
+    background: #f7f7f7;
+    color: #242424;
+}
+nav ul {
+    background: #cf01fe;
+    margin: 0; padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ajusta la altura a tu gusto */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* La imagen rellena y no se deforma */
+    object-position: center; /* Centra la imagen */
+    z-index: 1;
+  }
+  
+.banner-contenido {
+    position: relative;
+    z-index: 2;
+    color: #222;
+    background: rgba(255,255,255,0.7); /* Opcional para mejor legibilidad */
+    padding: 24px 32px;
+    border-radius: 12px;
+    max-width: 85%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+    text-align: center;
+  }
+.btn-whatsapp, .link-whatsapp {
+    background: #cf01fe;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+section {
+    padding: 35px 15px;
+}
+h2 {
+    color: #000;
+    font-size: 2em;
+    text-align: center;     }
+
+.galeria-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 16px;
+      }
+
+.galeria-grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+.servicios-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 24px;
+      }
+      
+.servicio-card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+.servicio-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+}
+#reservas {
+        background: #fafafa;
+        padding: 40px 0;
+        text-align: center;
+      }
+      
+#reservas h2 {
+        margin-bottom: 24px;
+      }
+      
+#reservas form {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Dos columnas para etiquetas y campos */
+        gap: 16px 24px;
+        background: #fff;
+        padding: 32px 24px;
+        border-radius: 18px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.09);
+        width: 100%;
+        max-width: 500px;
+        border: 1.5px solid #bee1e6;
+      }
+      
+#reservas label {
+        justify-self: end;
+        align-self: center;
+        font-weight: 500;
+        margin-right: 8px;
+      }
+      
+#reservas input,
+#reservas select {
+        padding: 10px;
+        border: 1.5px solid #bee1e6;
+        border-radius: 8px;
+        outline: none;
+        width: 100%;
+        background: #f7fafc;
+      }
+      
+#reservas button[type="submit"] {
+        grid-column: span 2; /* Botón ocupa dos columnas */
+        padding: 12px 0;
+        background: #cf01fe;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.05rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      
+#reservas button[type="submit"]:hover {
+        background: #3b82f6;
+      }
+      
+#reservas .link-whatsapp {
+        color: #f7f7f7;
+        font-weight: bold;
+        text-decoration: none;
+      }
+#reservas .link-whatsapp:hover {
+        text-decoration: underline;
+      }

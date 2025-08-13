@@ -1,43 +1,44 @@
-Entendimiento de la tarea
- Título claro de la tarea (ej. “Implementar endpoint /users con filtro de estado y fecha”).
+Analizando el código, el repositorio "mariamethodfactory" es una plataforma web para reservar servicios de belleza (manicure, corte de cabello, coloración) a domicilio, principalmente en Bogotá, Colombia.
 
- Reescribir la instrucción con mis palabras.
+# Mariamethodfactory
 
- Identificar objetivo final (¿Qué quiere lograr el usuario/cliente?).
+Plataforma web para reservar servicios de belleza a domicilio (manicure, peluquería, coloración) con atención profesional y personalizada.
 
- Aclarar requisitos ambiguos (preguntar si falta info).
+## Características principales
 
- Confirmar criterios de aceptación (qué debe cumplirse para que se considere terminado).
+- **Frontend (HTML, CSS, JavaScript):**
+  - Página informativa y de reservas online.
+  - Galería/portafolio de trabajos realizados.
+  - Sección de testimonios y contacto.
+  - Formulario para agendar citas en línea.
 
-2. Plan de acción
- Dividir en subtareas técnicas (máx. 30-40 min cada una).
+- **Backend (Go):**
+  - API REST para recibir y almacenar reservas de servicios (`POST /api/citas`).
+  - Notificación automática por WhatsApp al cliente tras reservar.
+  - Integración con base de datos para guardar citas.
+  - Arquitectura modular (handlers, models, factory para canales de notificación).
 
- Ordenar subtareas por prioridad y dependencia.
 
- Listar recursos necesarios (docs, repos, credenciales, librerías).
+## Cómo se desarrollo.
 
- Definir pruebas o validaciones desde el inicio (TDD o al menos casos de prueba).
+- Se  utiliza el singleton para la conexión con la bd. 
+- Se utiliza el metodo factory, para cuando se realice la reserva, se genere la notificación por medio de email o whatsapp. 
 
- Anotar riesgos o bloqueos posibles (ej. “endpoint externo puede fallar”).
 
-3. Ejecución
- Configurar entorno/local si aplica.
+## Tecnologías
 
- Realizar primera subtarea → validar.
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** Go (API RESTful)
+- **Notificaciones:** WhatsApp (Soporte para Email en arquitectura)
+- **Base de datos:** (mariadb)
 
- Continuar paso a paso sin saltar.
+## Instalación y ejecución
 
- Documentar cambios en el momento (comentarios, commits claros).
+1. Clona el repositorio.
+2. Ejecuta el backend en Go (`orfibackend/main.go`) para habilitar la API en `http://localhost:8080`.
+3. Abre `index.html` en tu navegador.
 
- Hacer pruebas unitarias y/o manuales en cada paso.
 
-4. Cierre y entrega
- Validar que cumple los criterios de aceptación.
+---
 
- Revisar código (self-review) antes de PR.
-
- Subir cambios → crear PR con descripción clara.
-
- Actualizar documentación si aplica.
-
- Confirmar con el solicitante que el resultado es correct
+Este README describe el objetivo, funcionalidad y tecnologías del proyecto según el código actual.
